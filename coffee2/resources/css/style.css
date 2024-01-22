@@ -159,6 +159,7 @@ header{
 }
 .start img{
       max-width:350px;
+    overflow:hidden;
 }
 .casute{
     background: gray;;
