@@ -1,0 +1,171 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Pacifico', sans-serif;
+    scroll-behavior:smooth;
+    list-style:none;
+    text-decoration:none;
+}
+
+:root{
+    --main-color:#ffb82a;
+    --text-color:#0b0505;
+    --bg-color:#1e1c2a;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+*::selection{
+    background:var(--main-color);
+    color:#fff;
+}
+body{
+    color:var(--text-color);
+    background:white;
+}
+
+header{
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:30px 170px;
+    background:white;
+    height:100px;
+}
+.imagine{
+    width:99px;
+    height:auto;
+}
+
+.nav-menu{
+    display:flex;
+}
+
+.nav-menu a{
+    color:black;
+    font-size:1.1rem;
+    padding:10px 20px;
+    font-weight:500px;
+}
+
+.nav-menu a:hover{
+    color:var(--main-color);
+    transition: .4s;
+}
+
+section{
+    padding:70px 15%;
+}
+
+.start{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    min-height:80vh;
+    margin-top:100px;
+    gap:80px;
+}
+
+.start img{
+    width:650px;
+    height:auto;
+}
+
+.start-text{
+    font-size:1.5rem;
+    text-align: center;;
+}
+
+.casute{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+}
+
+.nume-box{
+    text-align:center;
+}
+.nume-box label{
+    display:block;
+    font-size:2rem;
+}
+
+.nume-box input{
+    width:300px;
+    padding:10px;
+    margin:10px;
+    border:1px solid #ccc;
+    font-size:15px;
+    text-align: center;;
+}
+
+.opinie-box{
+    font-size:30px;
+    display:block;
+    text-align: center;
+    margin-top:25px;
+}
+
+.opinie-box textarea{
+    width:300px;
+    padding:10px;
+    margin:10px;
+    border:1px solid #ccc;
+    font-size:15px;
+    text-align: center;
+    display:block;
+}
+
+@media (max-width:1560px){
+    header{
+        padding:15px 40px;
+    }
+    :root{
+        --big-font:3.5rem;
+        --h2-font:2rem;
+    }
+}
+
+@media (max-width:1140px){
+    section{
+        padding:50px 8%;  
+}
+header{
+    flex-direction: column;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    text-align:center;
+}
+.nav-menu{
+    flex-direction: column;
+}
+.nav-menu a{
+    font-size:1.5rem;
+}
+.start{
+    flex-wrap: wrap;
+    margin-top:300px;
+    background:gray;
+}
+.start img{
+    width:450px;
+}
+.casute{
+    background: gray;;
+}
+
+}
+
+
+
+
