@@ -114,7 +114,7 @@ section{
     align-items:center;
 }
 
-.about-image img{
+.about-img img{
     max-width:100%;
     width:480px;
     height:auto;
@@ -395,8 +395,3 @@ header .navbar{
         width:100%;
     }
 }
-
-
-
-
-
